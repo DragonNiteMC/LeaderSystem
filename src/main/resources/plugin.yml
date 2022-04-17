@@ -2,7 +2,7 @@ name: LeaderSystem
 main: com.ericlam.mc.leadersystem.main.LeaderSystem
 version: ${project.version}
 author: Hydranapse_
-depend: [HyperNiteMC-Core]
+depend: [DragonNiteMC-Core]
 softdepend: [PlaceholderAPI]
 api-version: "1.15"
 commands:

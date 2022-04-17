@@ -8,10 +8,10 @@ import com.ericlam.mc.leadersystem.main.Utils;
 import com.ericlam.mc.leadersystem.manager.CacheManager;
 import com.ericlam.mc.leadersystem.runnables.AsyncUpdateRunnable;
 import com.ericlam.mc.leadersystem.runnables.ScheduleUpdateRunnable;
-import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
-import com.hypernite.mc.hnmc.core.managers.YamlManager;
-import com.hypernite.mc.hnmc.core.misc.commands.*;
-import com.hypernite.mc.hnmc.core.misc.permission.Perm;
+import com.dragonnite.mc.dnmc.core.main.DragonNiteMC;
+import com.dragonnite.mc.dnmc.core.managers.YamlManager;
+import com.dragonnite.mc.dnmc.core.misc.commands.*;
+import com.dragonnite.mc.dnmc.core.misc.permission.Perm;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
@@ -94,6 +94,6 @@ public class LeaderSystemCommand {
 
 
     public void register() {
-        HyperNiteMC.getAPI().getCommandRegister().registerCommand(leaderSystem, this.root);
+        DragonNiteMC.getAPI().getCommandRegister().registerCommand(leaderSystem, this.root);
     }
 }

@@ -8,8 +8,8 @@ import com.ericlam.mc.leadersystem.manager.LoadManager;
 import com.ericlam.mc.leadersystem.manager.SignManager;
 import com.ericlam.mc.leadersystem.placeholders.PlaceholderHook;
 import com.ericlam.mc.leadersystem.runnables.ScheduleUpdateRunnable;
-import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
-import com.hypernite.mc.hnmc.core.managers.YamlManager;
+import com.dragonnite.mc.dnmc.core.main.DragonNiteMC;
+import com.dragonnite.mc.dnmc.core.managers.YamlManager;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -46,7 +46,7 @@ public class LeaderSystem extends JavaPlugin {
     @Override
     public void onEnable() {
         ConfigurationSerialization.registerClass(SignVector.class);
-        yamlManager = HyperNiteMC.getAPI().getFactory().getConfigFactory(this)
+        yamlManager = DragonNiteMC.getAPI().getFactory().getConfigFactory(this)
                 .register("config.yml", MainConfig.class)
                 .register("lang.yml", LangConfig.class)
                 .register("leaders.yml", LeadersConfig.class)

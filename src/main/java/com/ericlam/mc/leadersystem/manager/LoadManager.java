@@ -4,11 +4,11 @@ import com.ericlam.mc.leadersystem.config.LeadersConfig;
 import com.ericlam.mc.leadersystem.config.MainConfig;
 import com.ericlam.mc.leadersystem.model.Board;
 import com.ericlam.mc.leadersystem.runnables.LeaderBoardNonExistException;
-import com.hypernite.mc.hnmc.core.builders.InventoryBuilder;
-import com.hypernite.mc.hnmc.core.builders.ItemStackBuilder;
-import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
-import com.hypernite.mc.hnmc.core.managers.SQLDataSource;
-import com.hypernite.mc.hnmc.core.managers.YamlManager;
+import com.dragonnite.mc.dnmc.core.builders.InventoryBuilder;
+import com.dragonnite.mc.dnmc.core.builders.ItemStackBuilder;
+import com.dragonnite.mc.dnmc.core.main.DragonNiteMC;
+import com.dragonnite.mc.dnmc.core.managers.SQLDataSource;
+import com.dragonnite.mc.dnmc.core.managers.YamlManager;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
@@ -31,7 +31,7 @@ public class LoadManager {
     public LoadManager(YamlManager yamlManager) {
         this.leadersConfig = yamlManager.getConfigAs(LeadersConfig.class);
         this.mainConfig = yamlManager.getConfigAs(MainConfig.class);
-        this.sqlDataSource = HyperNiteMC.getAPI().getSQLDataSource();
+        this.sqlDataSource = DragonNiteMC.getAPI().getSQLDataSource();
     }
 
     public TreeSet<Board> getRankingFromSQL(String item) throws LeaderBoardNonExistException {

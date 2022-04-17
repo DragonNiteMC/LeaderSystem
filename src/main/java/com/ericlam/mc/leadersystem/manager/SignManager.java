@@ -6,7 +6,7 @@ import com.ericlam.mc.leadersystem.config.SignVector;
 import com.ericlam.mc.leadersystem.main.LeaderSystem;
 import com.ericlam.mc.leadersystem.main.Utils;
 import com.ericlam.mc.leadersystem.model.Board;
-import com.hypernite.mc.hnmc.core.main.HyperNiteMC;
+import com.dragonnite.mc.dnmc.core.main.DragonNiteMC;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
@@ -151,9 +151,9 @@ public class SignManager {
             }
             boolean walled = Utils.isWalled(face.getOppositeFace(), head);
             if (board.getPlayerName().equalsIgnoreCase("null")) {
-                HyperNiteMC.getAPI().getPlayerSkinManager().setHeadBlock(board.getPlayerUUID(), head, walled, face);
+                DragonNiteMC.getAPI().getPlayerSkinManager().setHeadBlock(board.getPlayerUUID(), head, walled, face);
             } else {
-                HyperNiteMC.getAPI().getPlayerSkinManager().setHeadBlock(board.getPlayerUUID(), board.getPlayerName(), head, walled, face);
+                DragonNiteMC.getAPI().getPlayerSkinManager().setHeadBlock(board.getPlayerUUID(), board.getPlayerName(), head, walled, face);
             }
         }
         signState.setEditable(true);

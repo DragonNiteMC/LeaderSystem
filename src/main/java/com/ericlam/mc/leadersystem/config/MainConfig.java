@@ -1,7 +1,7 @@
 package com.ericlam.mc.leadersystem.config;
 
-import com.hypernite.mc.hnmc.core.config.yaml.Configuration;
-import com.hypernite.mc.hnmc.core.config.yaml.Resource;
+import com.dragonnite.mc.dnmc.core.config.yaml.Configuration;
+import com.dragonnite.mc.dnmc.core.config.yaml.Resource;
 
 @Resource(locate = "config.yml")
 public class MainConfig extends Configuration {
